@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .font-primary {
+    @apply font-sans; /* Example: Replace 'font-sans' with your actual font-family */
+  }
+}
+
+@layer base {
+  body {
+    @apply font-primary bg-primary text-white leading-loose;
+  }
+  .h1 {
+    @apply text-[48px] xl:text-[64px] leading-[1.1] font-semibold;
+}
+
+.h2 {
+  @apply text-[36px] xl:text-[48px] leading-[1.1] font-semibold;
+}
+.h3 {
+  @apply text-[24px] xl:text-[36px] leading-[1.1] font-semibold;
+}
+.h4 {
+  @apply text-[20px] xl:text-[24px] leading-[1.1] font-semibold;
+}
+.h5 {
+  @apply text-[18px] xl:text-[20px] leading-[1.1] font-semibold;
+}
+.h6 {
+  @apply text-[16px] xl:text-[18px] leading-[1.1] font-semibold;
+}
+}
+.custom-font-style {
+  font-family: 'Courier New', monospace; /* Replace 'Your Font Family' with your desired font */
+  font-weight: bold; /* Example for weight */
+  font-style: italic; /* Example for style */
+  /* Add more font properties as needed */
+}
+
+
